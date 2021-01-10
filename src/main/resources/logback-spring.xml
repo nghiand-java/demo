@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+  <include resource="logging/config.xml"/>
+  <include resource="logging/console-appender.xml"/>
+
+  <springProfile name="default,local,develop">
+    <include resource="logging/logger-default.xml"/>
+  </springProfile>
+
+  <springProfile name="staging">
+    <include resource="logging/logger-staging.xml"/>
+  </springProfile>
+
+  <springProfile name="production">
+    <include resource="logging/logger-production.xml"/>
+  </springProfile>
+
+</configuration>
