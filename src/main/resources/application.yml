@@ -2,7 +2,7 @@ spring:
   datasource:
     driver-class-name: org.postgresql.Driver
     password: 123456
-    url: jdbc:postgresql://localhost:5432/postgres
+    url: jdbc:postgresql://localhost:5433/postgres
     username: postgres
   jpa:
     hibernate:
@@ -13,3 +13,8 @@ spring:
         jdbc:
           lob:
             non_contextual_creation: true
+jwt:
+  clientId: demo
+  client-secret: secret
+  accessTokenValidititySeconds: 100
+  refreshTokenValiditySeconds: 1000
