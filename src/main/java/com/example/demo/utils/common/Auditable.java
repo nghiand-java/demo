@@ -1,4 +1,4 @@
-package com.example.demo.domain.model;
+package com.example.demo.utils.common;
 
 import lombok.Data;
 import org.springframework.data.annotation.CreatedBy;
