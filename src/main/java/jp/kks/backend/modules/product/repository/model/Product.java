@@ -1,4 +1,4 @@
-package jp.kks.backend.modules.product.model;
+package jp.kks.backend.modules.product.repository.model;
 
 import jp.kks.backend.utils.common.Auditable;
 import lombok.Data;
