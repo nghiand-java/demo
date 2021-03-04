@@ -16,5 +16,10 @@ spring:
 jwt:
   clientId: demo
   client-secret: secret
-  accessTokenValidititySeconds: 100
+  accessTokenValidititySeconds: 3600
   refreshTokenValiditySeconds: 1000
+
+server:
+  port: 8088
+  servlet:
+    context-path: /api
